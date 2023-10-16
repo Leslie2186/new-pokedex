@@ -1,17 +1,15 @@
 import { useState } from 'react';
 import './Cards.css'
 
-
 const Cards = ({pokemon}) => {
     let [isFavorite, setIsFavorite] = useState(false);
 
     function handleClickFavorite() {
-        setIsFavorite(() =>
-            !isFavorite ? (isFavorite = true) : (isFavorite = false)
-        );
+        setIsFavorite(!isFavorite);
     }
     
     let backColor = "lightgrey";
+
     if(pokemon.type === "Plante") backColor = "lightseagreen";
     if(pokemon.type === "Eau") backColor = "skyblue";
     if(pokemon.type === "Feu") backColor = "maroon";

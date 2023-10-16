@@ -1,27 +1,20 @@
 
 import './Filtretypes.css'
 
-const Filtretypes = ({filter, setFilter}) => {
+const Filtretypes = ({pokemonList, setFilter}) => {
 
-    const modifFilter = (param) => {
-        setFilter(filter = param);
-    }
+    const list = new Set(pokemonList.map(poke => poke.type)); 
+    /*Set() permet de garder une valeur de chaque type uniquement, map() boucle sur le tableau pokemonList et récupère les types, qui sont envoyés dans list*/
+    
+    /*Le premier button, au clic, modifie "filter" grace à sa fonction "setFilter" et lui attribue la valeur "all"*/
+    /*"Array.from(list).map()" permet de boucler sur le tableau des types, récupéré précédemment dans la variable list.*/ 
+    /*On ne peut pas faire un map() sur un tableau récupéré par Set directement*/
+    /*Je crée un button pour chaque type et une fonction onClick qui modifie le "fiter" grace à la méthode "setFilter" en lui passant le type en cours*/
 
     return <div>
        <section id="sectionButtons">
-            <button onClick={() => modifFilter("all")}>Tous les types</button>
-            <button onClick={() => modifFilter("plante")}>Plante</button>
-            <button onClick={() => modifFilter("eau")}>Eau</button>
-            <button onClick={() => modifFilter("feu")}>Feu</button>
-            <button onClick={() => modifFilter("electrique")}>Electrique</button>
-            <button onClick={() => modifFilter("vol")}>Vol</button>
-            <button onClick={() => modifFilter("fée")}>Fée</button>
-            <button onClick={() => modifFilter("combat")}>Combat</button>
-            <button onClick={() => modifFilter("psy")}>Psy</button>
-            <button onClick={() => modifFilter("roche")}>Roche</button>
-            <button onClick={() => modifFilter("sol")}>Sol</button>
-            <button onClick={() => modifFilter("glace")}>Glace</button>
-            <button onClick={() => modifFilter("dragon")}>Dragon</button>
+            <button onClick={() => setFilter("all")}>Tous les types</button>
+            {Array.from(list).map(list => <button key={list} onClick={() => setFilter(`${list}`)}>{list}</button>)}
        </section>
     </div>
 

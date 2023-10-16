@@ -11,25 +11,14 @@ import Filtretypes from './components/Filtretypes/Filtretypes'
 function App() {
  let [filter, setFilter] = useState("all");
 
- console.log(filter);
+ /*Dans le component Filtretypes, je passe la fonction "setFilter", pour modifier le "filter" par rapport aux types dans les datas, qui est renvoyé par le clique sur les boutons*/
+ /*Dans le component SectionCards je passe la variable "filter" pour récupérer le type des pokémons à afficher*/
+
   return (
       <div>
         <Navbar />
-
-        <Filtretypes filter={filter} setFilter={setFilter}/>
-
-        {(filter === "plante" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "eau" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "feu" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "electrique" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "vol" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "fée" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "combat" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "psy" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "roche" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "sol" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "glace" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
-        {(filter === "dragon" || filter === "all") ? <SectionCards pokemonList={pokemonList} filter={filter}/> : null }
+        <Filtretypes pokemonList={pokemonList} setFilter={setFilter}/>
+        <SectionCards pokemonList={pokemonList} filter={filter}/>
       </div>
       
   )
