@@ -31,7 +31,7 @@ const Cards = ({pokemon}) => {
         <div id="containImg"><img src={pokemon.imgSrc} alt={pokemon.name} className='imgPokemon'/></div>
         <div className="infoPokemon">
             <h2>{pokemon.name}</h2>
-            <h3>Type : {pokemon.type}</h3>
+            <div id="containType"><h3>Type : {pokemon.type}</h3><div className={pokemon.type}></div></div>
             <div
                 id="favorite"
                 className={isFavorite ? 'isFavorite' : 'notFavorite'}
