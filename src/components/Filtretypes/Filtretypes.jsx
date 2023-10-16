@@ -1,12 +1,12 @@
 
 import './Filtretypes.css'
 
-const Filtretypes = ({filter, setFilter}) => {
+const Filtretypes = ({setFilter}) => {
 
     return <div>
         <select>
-            <option onClick={() => setFilter({filter} = "all")}>Tous les types</option>
-            <option onClick={() => setFilter({filter} = "plante")}>Plante</option>
+            <option onClick={() => setFilter("all")}>Tous les types</option>
+            <option onClick={() => setFilter("plante")}>Plante</option>
 
        </select>
     </div>

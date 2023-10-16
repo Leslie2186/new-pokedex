@@ -2,11 +2,17 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    font-family: Baskerville;
+    /*margin-left: 40px;
+    margin-right: 40px;*/
 }
 
 #logo{
     width: 70px;
     height: auto;
+}
+
+h1{
+    font-size: 4em;
+    font-style: italic;
 }
