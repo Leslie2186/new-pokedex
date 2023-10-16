@@ -1,6 +1,12 @@
 .sectionCards{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
     margin-top: 30px;
+}
+
+@media screen and (max-width : 600px){
+    .sectionCards{
+        grid-template-columns: 1fr 1fr;
+    }
 }

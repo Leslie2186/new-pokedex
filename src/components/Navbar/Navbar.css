@@ -1,12 +1,17 @@
 nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: Baskerville;
 }
 
 #logo{
     width: 70px;
     height: auto;
+    align-self: center;
+}
+
+h1{
+    font-size: 4em;
+    font-style: italic;
+   
 }

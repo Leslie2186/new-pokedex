@@ -158,14 +158,14 @@ const pokemonList = [
       name: "Alakazam",
       type: "Psy",
       imgSrc:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png",
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
     },
     {
       id: 24,
       name: "Onix",
       type: "Roche",
       imgSrc:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png",
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/95.png",
     },
     {
       id: 25,
@@ -190,34 +190,41 @@ const pokemonList = [
     },
     {
       id: 28,
+      name: "Ptera",
+      type: "Roche",
+      imgSrc:
+        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/142.png",
+    },
+    {
+      id: 29,
       name: "Minidraco",
       type: "Dragon",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png",
     },
     {
-      id: 29,
+      id: 30,
       name: "Draco",
       type: "Dragon",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png",
     },
     {
-      id: 30,
+      id: 31,
       name: "Dracolosse",
       type: "Dragon",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png",
     },
     {
-      id: 31,
+      id: 32,
       name: "Mewtow",
       type: "Psy",
       imgSrc:
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png",
     },
     {
-      id: 32,
+      id: 33,
       name: "Mew",
       type: "Psy",
       imgSrc:

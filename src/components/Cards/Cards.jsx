@@ -30,7 +30,7 @@ const Cards = ({pokemon}) => {
 
 
     return <div className="card" style={{backgroundColor:backColor}}>
-        <div><img src={pokemon.imgSrc} alt={pokemon.name} className='imgPokemon'/></div>
+        <div id="containImg"><img src={pokemon.imgSrc} alt={pokemon.name} className='imgPokemon'/></div>
         <div className="infoPokemon">
             <h2>{pokemon.name}</h2>
             <h3>Type : {pokemon.type}</h3>
