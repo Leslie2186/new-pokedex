@@ -78,15 +78,15 @@ h3{
 }
 
 .Plante{
-    background-image: url("../../assets/plante.png");
+    background-image: url("../../assets/plante.svg");
 }
 
 .Combat{
-    background-image: url("../../assets/combat.png");
+    background-image: url("../../assets/combat.svg");
 }
 
 .Eau{
-    background-image: url("../../assets/eau.png");
+    background-image: url("../../assets/eau.svg");
 }
 
 .Dragon{
@@ -94,11 +94,11 @@ h3{
 }
 
 .Electrique{
-    background-image: url("../../assets/electrique.png");
+    background-image: url("../../assets/electrique.svg");
 }
 
 .Fée{
-    background-image: url("../../assets/fee.png");
+    background-image: url("../../assets/fee.svg");
 }
 
 .Feu{
@@ -106,19 +106,19 @@ h3{
 }
 
 .Glace{
-    background-image: url("../../assets/glace.png");
+    background-image: url("../../assets/glace.svg");
 }
 
 .Psy{
-    background-image: url("../../assets/psy.png");
+    background-image: url("../../assets/psy.svg");
 }
 
 .Roche{
-    background-image: url("../../assets/roche.png");
+    background-image: url("../../assets/roche.svg");
 }
 
 .Sol{
-    background-image: url("../../assets/sol.png");
+    background-image: url("../../assets/sol.svg");
 }
 
 .Vol{
